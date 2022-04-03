@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Oswald:wght@400;700&display=swap');
+
+/*font-family: 'Open Sans', sans-serif;
+font-family: 'Oswald', sans-serif;*/
+
+* {
+    margin: 0;
+    padding:0;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+header .line {
+    background: #117050;
+    height: 15px;
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.button {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 30px;
+    border: 2px solid #454545;
+    color: #454545;
+    border-radius: 3px;
+}
+.button:hover {
+    background-color: #454545;
+    color: white;
+    
+}
+
+.bar {
+    width: 168px;
+    height: 22px;
+    background-color: #117050;
+    margin-bottom: 15px;
+}
+h1 {
+    font-family: "oswald", sans-serif;
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-size: 90px;
+    line-height: 100px;
+}
+
+.content-title {
+    font-size: 27px;
+    font-family: "oswald" , sans-serif;
+    font-weight: bold;
+    line-height: 50px;
+    margin: 20px 0px;
+}
+.content-quote {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 30px;
+}
+.content-text {
+    margin-bottom: 50px;
+    line-height: 25px;
+    text-align: justify;
+}
+
+.header-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
+.header-area img {
+    width: 64px;
+    height: 64px;
+}
+
+.header-right input {
+    font-size: 16px;
+    padding: 8px 10px;
+    padding-right: 25px;
+    outline: 0;
+    border: 1px solid #999999;
+    width: 100%;
+    max-width: 250px;
+}
+.header-right {
+    display: flex;
+    align-items: center;
+}
+.header-right form {
+    display: flex;
+}
+
+.header-right button {
+    border: 0;
+    background-color: transparent;
+}
+
+.header-right button img {
+    width: 16px;
+    height: 16px;
+    margin-left:-30px;
+    cursor:pointer;
+}
+.header-right .header-menu img {
+    width: 24px;
+    height: 24px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+section.banner {
+    background-image: url(../images/bg.jpg);
+    padding:90px 0px ;
+    background-position: center;
+    background-size: cover;
+}
+
+.banner-images {
+    margin-top: 60px;
+}
+.banner-images img {
+    width: 148px;
+    height: 148px;
+    border: 6px solid #117050;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+
+.area1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.area1-content{
+    padding: 80px;
+}
+
+
+.area1-img1{
+    background-color: #117050;
+    background-image: url(../images/f2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 350px;
+}
+.area1-img2 {
+    background-image: url(../images/f1.jpg);
+    background-position: center;
+    background-size: cover;
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+}
+
+.area2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.area2-content{
+    padding: 80px;
+}
+.area2-img1{
+    background-image: url(../images/f4.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 450px;
+}
+.area2-img2 {
+    background-image: url(../images/f3.jpg);
+    background-position: center;
+    background-size: cover;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+
+
+.area3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.area3-content{
+    padding: 200px 80px;
+    background-image: url(../images/bg2.jpg);
+    background-position: left;
+    background-size: cover;
+}
+.area3-img1{
+    background-image: url(../images/f5.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.area4 {
+    display: grid;
+    grid-template-columns: 450px 1fr;
+    background-color: #E8EAEF;
+}
+
+.area4-content{
+    padding: 150px 80px;
+    background-position: left;
+    background-size: cover;
+    background-color: #E8EAEF;
+}
+.area4-bg {
+    background-image: url(../images/bg3.jpg);
+    background-position:left;
+    
+    
+}
+
+.area5 {
+    background-image:url(../images/bg4.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+}
+footer {
+    background-color: #333;
+    color: white;
+    padding: 80px;
+    text-align: center;
+}
+
+
+
+
+/*Responsive*/
+
+        /*769px - 1140px*/
+
+
+@media (min-width:769px) and (max-width:1140px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+    /*426px - 768px*/
+
+
+@media (min-width:426px) and (max-width:768px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .area1 {
+        grid-template-columns: 3fr 2fr;
+    }
+    .area1-content {
+        padding: 50px;
+    }
+    .area2 {
+        grid-template-columns: 2fr 3fr;
+    }
+    .area2-content {
+        padding: 40px;
+    }
+    .area3 {
+        grid-template-columns: 3fr 2fr;
+    }
+    .area3-content {
+       
+    }
+    .area5{
+        width: 100%;
+    }
+    
+}
+
+@media (max-width:425px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    button {
+        
+    }
+    .bar {
+        margin-bottom: -10px;
+        width: 100px;
+        height: 10px;
+    }
+    .header-right {
+        margin-left: 20px;
+    }
+    .header-right input {
+        max-width: 150px;
+    }
+    .header-right .header-menu img {
+        margin-left: 10px;
+    }
+    h1 {
+        font-size: 55px;
+        line-height: 50px;
+    }
+    h2 {
+        font-size: 25px;
+        line-height: 29px;
+    }
+   section.banner {
+        
+    }
+    .banner-images {
+        
+    }
+    .banner-images img {
+        width: 75px;
+        height: 75px;
+        border: 3px solid #117050;
+        margin: 0;
+        margin-right: 8px;
+    }
+    
+    .area1,.area2,.area3,.area4 {
+        grid-template-columns: 1fr;
+    }
+    .area1-content,.area2-content,.area3-content,.area4-content{
+        padding: 20px;
+        
+    }
+    .content-title {
+        margin: 15px 0px;
+    }
+    .content-quote {
+        margin-bottom: 13px;
+    }
+    .content-text {
+        margin-bottom: 10px;
+    }
+    .area1-img1 {
+        height: 200px;
+    }
+    .area5 {
+        height: 165px;
+    }
+    footer {
+        padding: 40px 30px;
+        text-align: center;
+    }
+
+}
+
+
